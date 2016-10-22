@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Quote {
-    /*private static final int REQUESTER_INDEX = 0;
+    private static final int REQUESTER_INDEX = 0;
 
     private List<Passenger> passengers;
 
@@ -32,10 +32,5 @@ public class Quote {
     public void setHotelPrice(double price) {
         System.out.println("The hotel price is " + price + " $");
     }
-*/
-	public Quote(FlightReservation flightReservation) {
-		
-    }
-	
-	
+
 }

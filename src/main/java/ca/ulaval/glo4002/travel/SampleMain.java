@@ -7,8 +7,7 @@ public class SampleMain {
         Passenger passenger2 = new Passenger(false, false);
         Passenger passenger3 = new Passenger(false, true);
 
-        Quote quote = new Quote();
-        /*
+        Quote quote = new Quote(requester);
         quote.addPassenger(passenger1);
         quote.addPassenger(passenger2);
         quote.addPassenger(passenger3);
@@ -18,7 +17,5 @@ public class SampleMain {
 
         new HotelReservation().generateQuote(hotel, quote);
         new FlightReservation().generateQuote(flight, quote);
-        */
     }
-    
 }

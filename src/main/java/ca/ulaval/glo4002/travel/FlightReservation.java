@@ -1,17 +1,7 @@
 package ca.ulaval.glo4002.travel;
 
-import java.util.List;
-
 public class FlightReservation {
-	
-	private List<Passenger> passengers;
-	
-	public FlightReservation(List<Passenger> passengers){
-		this.passengers = passengers;
-	}
-	
-	public 
-    /*public void generateQuote(Flight flight, Quote quote) {
+    public void generateQuote(Flight flight, Quote quote) {
         double price = 0.0;
 
         for (Passenger passenger : quote.getPassengers()) {
@@ -31,5 +21,5 @@ public class FlightReservation {
 
         }
         quote.setFlightPrice(price);
-    }*/
+    }
 }
