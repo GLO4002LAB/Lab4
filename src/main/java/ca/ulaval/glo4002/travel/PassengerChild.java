@@ -8,4 +8,19 @@ public class PassengerChild implements Passenger {
 	public double getRebate() {
 		return REBATE;
 	}
+
+	@Override
+	public boolean isChild() {
+		return true;
+	}
+
+	@Override
+	public boolean isAdult() {
+		return false;
+	}
+
+	@Override
+	public boolean isVIP() {
+		return false;
+	}
 }

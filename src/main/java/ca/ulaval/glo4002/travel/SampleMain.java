@@ -16,7 +16,12 @@ public class SampleMain {
         Hotel hotel = new Hotel(964.35);
         Flight flight = new Flight(473.01, true);
 
-        new HotelReservation().generateQuote(hotel, quote);
-        new FlightReservation().generateQuote(flight, quote);
+        ReservationFactory hotelReservationFactory = ReservationFactory.getFactory(TypeReservation.HOTEL);
+        Reservation hotelReservation = hotelReservationFactory.create(hotel);
+        hotelReservation.generateQuote(hotel, quote);
+        
+        ReservationFactory flightReservationFactory = ReservationFactory.getFactory(TypeReservation.FLIGHT);
+        Reservation flightReservation = flightReservationFactory.create(flight);
+        flightReservation.generateQuote(flight, quote);
     }
 }

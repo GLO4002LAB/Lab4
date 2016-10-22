@@ -17,7 +17,7 @@ public class PassengerTest {
         passager = passengerFactory.create(IS_VIP, IS_CHILD);
     }
 
-    /*@Test
+    @Test
     public void shouldBeVIP() {
         assertTrue(passager.isVIP());
     }
@@ -30,7 +30,7 @@ public class PassengerTest {
     @Test
     public void aChildIsNotAnAdult() {
         assertFalse(passager.isAdult() == passager.isChild());
-    }*/
+    }
 
     @Test
     public void VIPRebateIsDefinedByDefault() {

@@ -6,12 +6,13 @@ public class PassengerFactory {
 		
 		if(isChild){
 			passanger = new PassengerChild();
-		}
-		else if(isVip){
-			passanger = new PassengerVip();
+			if(isVip)
+				passanger = new PassengerChildVip();
 		}
 		else{
 			passanger = new PassengerAdult();
+			if(isVip)
+				passanger = new PassengerVip();
 		}
 		
 		return passanger;
