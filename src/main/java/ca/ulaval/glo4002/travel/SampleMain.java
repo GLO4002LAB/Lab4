@@ -2,13 +2,13 @@ package ca.ulaval.glo4002.travel;
 
 public class SampleMain {
     public static void main(String[] args) {
-    	PassengerFactory passengerFactory = new PassengerFactory();
-        Passenger requester = passengerFactory.create(true, false);
-        Passenger passenger1 = passengerFactory.create(true, false);
-        Passenger passenger2 = passengerFactory.create(true, false);
-        Passenger passenger3 = passengerFactory.create(true, false);
+        Passenger requester = new Passenger(true, false);
+        Passenger passenger1 = new Passenger(false, false);
+        Passenger passenger2 = new Passenger(false, false);
+        Passenger passenger3 = new Passenger(false, true);
 
-        Quote quote = new Quote(requester);
+        Quote quote = new Quote();
+        /*
         quote.addPassenger(passenger1);
         quote.addPassenger(passenger2);
         quote.addPassenger(passenger3);
@@ -18,5 +18,7 @@ public class SampleMain {
 
         new HotelReservation().generateQuote(hotel, quote);
         new FlightReservation().generateQuote(flight, quote);
+        */
     }
+    
 }
