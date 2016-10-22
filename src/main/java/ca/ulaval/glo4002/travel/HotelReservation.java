@@ -5,11 +5,7 @@ public class HotelReservation {
         double price = 0.0;
 
         Passenger requester = quote.getRequester();
-        if (requester.isVIP() && requester.isAdult()) {
-            price += hotel.getPrice() * requester.getVIPRebate();
-        } else {
-            price += hotel.getPrice();
-        }
+        price += hotel.getPrice() * requester.getRebate();
 
         quote.setHotelPrice(price);
     }
