@@ -10,6 +10,7 @@ public class Quote {
 
     public Quote(Passenger requester) {
         passengers = new ArrayList<Passenger>();
+        requester.setRequester(true);
         passengers.add(requester);
     }
 
